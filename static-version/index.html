@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BuyBooks — Your Own Bookstore, Your Own Rules</title>
+  <meta name="description" content="BuyBooks.com lets authors launch a beautiful bookstore in minutes, sell print and digital books directly to readers, and keep more of every sale." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="logo" aria-label="BuyBooks home">
+        <span class="logo-mark">B</span>
+        <span class="logo-text">buybooks<span class="logo-dot">.com</span></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main">
+        <a href="#top">Home</a>
+        <a href="#features">Features</a>
+        <a href="#themes">Themes</a>
+        <a href="#compare">Why Us</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <div class="nav-actions-mobile">
+          <a href="#" class="btn btn-ghost">Log in</a>
+          <a href="#pricing" class="btn btn-primary">Get Started</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#" class="login-link">Log in</a>
+        <a href="#pricing" class="btn btn-primary">Get Started</a>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">For independent authors</span>
+          <h1>Open your own bookstore. <span class="highlight">Keep what you earn.</span></h1>
+          <p class="lead">
+            BuyBooks gives every author a stunning storefront to sell paperbacks, hardcovers,
+            eBooks and audiobooks straight to readers — no middleman taking the biggest slice.
+          </p>
+          <div class="hero-cta">
+            <a href="#pricing" class="btn btn-primary btn-lg">Start Selling Today</a>
+            <a href="#themes" class="btn btn-outline btn-lg">See Store Themes</a>
+          </div>
+          <p class="guarantee">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3Zm-1.2 14.2-3.5-3.5 1.4-1.4 2.1 2.1 4.6-4.6 1.4 1.4-6 6Z"/></svg>
+            30-day full refund promise — no questions asked.
+          </p>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="mock-browser">
+            <div class="mock-bar">
+              <span></span><span></span><span></span>
+              <div class="mock-url">yourname.buybooks.com</div>
+            </div>
+            <div class="mock-body">
+              <div class="mock-author">
+                <div class="mock-avatar"></div>
+                <div>
+                  <div class="mock-line w60"></div>
+                  <div class="mock-line w40 light"></div>
+                </div>
+              </div>
+              <div class="mock-books">
+                <div class="book c1"><span>The Golden Hour</span></div>
+                <div class="book c2"><span>Salt &amp; Honey</span></div>
+                <div class="book c3"><span>Quiet Rivers</span></div>
+              </div>
+              <div class="mock-buy">Buy Now — $18.99</div>
+            </div>
+          </div>
+          <div class="float-card sale">
+            <strong>+ $24.50</strong>
+            <small>New order · Paperback</small>
+          </div>
+          <div class="float-card payout">
+            <strong>Paid out today</strong>
+            <small>$1,284.10 to your bank</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== STATS ========== -->
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat"><strong data-count="100">0</strong><span>% of your profit, kept by you</span></div>
+        <div class="stat"><strong>4.9<small>/5</small></strong><span>average author rating</span></div>
+        <div class="stat"><strong data-count="15">0</strong><span>minutes to launch a store</span></div>
+        <div class="stat"><strong>$<span data-count="12">0</span>M+</strong><span>paid to authors</span></div>
+      </div>
+    </section>
+
+    <!-- ========== THEMES ========== -->
+    <section class="section" id="themes">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Store themes</span>
+          <h2>A storefront that feels like your book</h2>
+          <p>Pick a theme, add your covers and colors, and you're live. Switch any time — your books and orders stay put.</p>
+        </div>
+
+        <div class="theme-tabs" role="tablist">
+          <button class="theme-tab active" data-theme="classic" role="tab">Classic</button>
+          <button class="theme-tab" data-theme="modern" role="tab">Modern</button>
+          <button class="theme-tab" data-theme="cosmic" role="tab">Cosmic</button>
+          <button class="theme-tab" data-theme="vintage" role="tab">Vintage</button>
+          <button class="theme-tab" data-theme="fairytale" role="tab">Fairytale</button>
+        </div>
+
+        <div class="theme-preview" id="themePreview" data-theme="classic">
+          <div class="tp-header">
+            <div class="tp-logo">Jane Author</div>
+            <div class="tp-nav"><span>Books</span><span>About</span><span>Events</span><span>Cart (0)</span></div>
+          </div>
+          <div class="tp-hero">
+            <div class="tp-cover"><span>Under the Amber Sky</span></div>
+            <div class="tp-info">
+              <h3 class="tp-title">Under the Amber Sky</h3>
+              <p class="tp-sub">A novel · Book one of the Harvest Trilogy</p>
+              <div class="tp-formats">
+                <span>Paperback $16.99</span><span>Hardcover $27.99</span><span>eBook $7.99</span>
+              </div>
+              <button class="tp-btn" tabindex="-1">Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FEATURES ========== -->
+    <section class="section section-tint" id="features">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Everything included</span>
+          <h2>All the tools to sell books, in one place</h2>
+          <p>No plugins, no patchwork. BuyBooks handles the store, the printing, the shipping and the payouts.</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature">
+            <div class="f-icon">🎨</div>
+            <h3>Custom Themes</h3>
+            <p>Beautiful, mobile-ready designs you can tailor with your own fonts, colors and imagery.</p>
+          </article>
+          <article class="feature">
+            <div class="f-icon">📁</div>
+            <h3>Easy Uploads</h3>
+            <p>Drop in your manuscript PDF, cover, EPUB or audio files — we check and prepare them for you.</p>
+          </article>
+          <article class="feature">
+            <div class="f-icon">📣</div>
+            <h3>Marketing Built In</h3>
+            <p>Email capture, pre-orders, social pixels and analytics, ready to switch on from day one.</p>
+          </article>
+          <article class="feature">
+            <div class="f-icon">🌍</div>
+            <h3>Worldwide Shipping</h3>
+            <p>Printed close to your readers through our global partner network for faster, cheaper delivery.</p>
+          </article>
+          <article class="feature">
+            <div class="f-icon">🔔</div>
+            <h3>Instant Sale Alerts</h3>
+            <p>Get a ping on your phone every time someone buys a copy. It never gets old.</p>
+          </article>
+          <article class="feature">
+            <div class="f-icon">💸</div>
+            <h3>Daily Payouts</h3>
+            <p>Your earnings land in your bank account every day — not 60 or 90 days later.</p>
+          </article>
+          <article class="feature">
+            <div class="f-icon">📚</div>
+            <h3>Every Format</h3>
+            <p>Paperback, hardcover, eBook, audiobook and signed bundles — all sold from a single page.</p>
+          </article>
+          <article class="feature">
+            <div class="f-icon">🏷️</div>
+            <h3>Discount Codes</h3>
+            <p>Run launch-day deals, holiday sales and reader-club codes in a couple of clicks.</p>
+          </article>
+          <article class="feature">
+            <div class="f-icon">🔗</div>
+            <h3>Your Own Domain</h3>
+            <p>Use yourname.buybooks.com or connect a domain you already own. Your brand, front and center.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== COMPARE ========== -->
+    <section class="section" id="compare">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Why BuyBooks</span>
+          <h2>How we stack up</h2>
+          <p>Big marketplaces are great for discovery — but your store should be where you earn the most.</p>
+        </div>
+
+        <div class="table-wrap">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th class="us">BuyBooks</th>
+                <th>Generic Store Builder</th>
+                <th>Big Marketplace</th>
+                <th>Print Distributor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Print-on-demand included</td>
+                <td class="us yes">✓</td><td class="no">✕</td><td class="yes">✓</td><td class="yes">✓</td>
+              </tr>
+              <tr>
+                <td>Royalty you keep</td>
+                <td class="us"><strong>100% of profit</strong></td><td>Varies + app fees</td><td>35–70%</td><td>~40–55%</td>
+              </tr>
+              <tr>
+                <td>Payout speed</td>
+                <td class="us"><strong>Daily</strong></td><td>2–7 days</td><td>~60 days</td><td>~90 days</td>
+              </tr>
+              <tr>
+                <td>You own reader emails</td>
+                <td class="us yes">✓</td><td class="yes">✓</td><td class="no">✕</td><td class="no">✕</td>
+              </tr>
+              <tr>
+                <td>Built for books</td>
+                <td class="us yes">✓</td><td class="no">✕</td><td class="yes">✓</td><td class="yes">✓</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== REVIEWS ========== -->
+    <section class="section section-gold" id="reviews">
+      <div class="container">
+        <div class="section-head light">
+          <span class="eyebrow">Loved by authors</span>
+          <h2>Writers who made the switch</h2>
+        </div>
+
+        <div class="reviews-grid">
+          <figure class="review">
+            <div class="stars">★★★★★</div>
+            <blockquote>“My first month on BuyBooks paid more than a whole quarter on the big sites. And I finally know who my readers are.”</blockquote>
+            <figcaption><span class="r-avatar">AM</span><span><strong>Amara M.</strong><small>Romance author</small></span></figcaption>
+          </figure>
+          <figure class="review">
+            <div class="stars">★★★★★</div>
+            <blockquote>“Set up took an afternoon. Signed hardcover bundles are now my best seller — something I could never offer before.”</blockquote>
+            <figcaption><span class="r-avatar">DK</span><span><strong>Daniel K.</strong><small>Fantasy series writer</small></span></figcaption>
+          </figure>
+          <figure class="review">
+            <div class="stars">★★★★★</div>
+            <blockquote>“Daily payouts changed how I run my writing business. Support answers in minutes, by real people who love books.”</blockquote>
+            <figcaption><span class="r-avatar">FO</span><span><strong>Fatima O.</strong><small>Non-fiction &amp; memoir</small></span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PRICING ========== -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Simple pricing</span>
+          <h2>One flat fee. Zero cut of your sales.</h2>
+          <p>Pay yearly, keep every dollar of profit. Cancel any time.</p>
+        </div>
+
+        <div class="billing-toggle">
+          <span class="bt-label active" data-bill="year">Yearly</span>
+          <button class="switch" id="billingSwitch" aria-label="Toggle monthly billing"><span></span></button>
+          <span class="bt-label" data-bill="month">Monthly</span>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="plan">
+            <h3>Starter</h3>
+            <p class="plan-desc">Everything you need to launch your first book.</p>
+            <div class="price"><span class="amt" data-year="99" data-month="12">$99</span><span class="per">/year</span></div>
+            <ul>
+              <li>Your own bookstore &amp; subdomain</li>
+              <li>Unlimited books &amp; formats</li>
+              <li>Print-on-demand &amp; shipping</li>
+              <li>Daily payouts</li>
+              <li>Discount codes</li>
+              <li>Email support</li>
+            </ul>
+            <a href="#" class="btn btn-outline btn-block">Choose Starter</a>
+          </div>
+
+          <div class="plan featured">
+            <div class="badge">Most popular</div>
+            <h3>Pro</h3>
+            <p class="plan-desc">For authors ready to grow a real readership.</p>
+            <div class="price"><span class="amt" data-year="249" data-month="29">$249</span><span class="per">/year</span></div>
+            <ul>
+              <li>Everything in Starter</li>
+              <li>Custom domain</li>
+              <li>Audiobook &amp; bundle sales</li>
+              <li>Pre-orders &amp; signed editions</li>
+              <li>Advanced analytics &amp; pixels</li>
+              <li>Priority chat support</li>
+            </ul>
+            <a href="#" class="btn btn-primary btn-block">Choose Pro</a>
+          </div>
+        </div>
+
+        <p class="pricing-note">✓ 30-day refund promise &nbsp; ✓ No setup fees &nbsp; ✓ No per-sale commission</p>
+      </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="section section-tint" id="faq">
+      <div class="container narrow">
+        <div class="section-head">
+          <span class="eyebrow">Questions</span>
+          <h2>Frequently asked</h2>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>Can I still sell on other platforms?</summary>
+            <p>Absolutely. BuyBooks doesn't require exclusivity. Many authors keep their marketplace listings for discovery and send their fans to their BuyBooks store to earn more per copy.</p>
+          </details>
+          <details>
+            <summary>How are my earnings calculated?</summary>
+            <p>You set the retail price. We subtract the printing cost (for physical books) and payment processing — everything left over is yours. We never take a percentage of your sale.</p>
+          </details>
+          <details>
+            <summary>What book sizes and bindings do you support?</summary>
+            <p>All popular trim sizes from pocket paperbacks to large-format coffee-table books, in paperback or hardcover, with matte or gloss covers and cream or white paper.</p>
+          </details>
+          <details>
+            <summary>Do I need to handle printing or shipping?</summary>
+            <p>No. Each order is printed on demand and shipped straight to your reader. You never touch inventory unless you want to order author copies.</p>
+          </details>
+          <details>
+            <summary>Which countries can I sell to?</summary>
+            <p>Readers in over 150 countries can buy from your store, and our print partners across North America, Europe, Africa and Asia keep shipping times short.</p>
+          </details>
+          <details>
+            <summary>What if BuyBooks isn't right for me?</summary>
+            <p>Let us know within 30 days of signing up and we'll refund your subscription in full.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="cta">
+      <div class="container cta-inner">
+        <h2>Your readers are waiting.</h2>
+        <p>Launch your BuyBooks store today and start earning what your words are worth.</p>
+        <form class="cta-form" id="ctaForm">
+          <input type="email" placeholder="Enter your email" aria-label="Email address" required />
+          <button type="submit" class="btn btn-dark">Get Started</button>
+        </form>
+        <p class="cta-msg" id="ctaMsg" hidden>Thanks! Check your inbox to finish setting up your store.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="logo">
+          <span class="logo-mark">B</span>
+          <span class="logo-text">buybooks<span class="logo-dot">.com</span></span>
+        </a>
+        <p>The bookstore platform made for authors. Sell direct, get paid daily, own your audience.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="X">X</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#">About us</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#">Careers</a>
+        <a href="#">Blog</a>
+      </div>
+      <div>
+        <h4>For Authors</h4>
+        <a href="#pricing">Pricing</a>
+        <a href="#features">Features</a>
+        <a href="#">Printing guide</a>
+        <a href="#">Royalty calculator</a>
+      </div>
+      <div>
+        <h4>For Readers</h4>
+        <a href="#">Track an order</a>
+        <a href="#">Returns</a>
+        <a href="#">Help center</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:hello@buybooks.com">hello@buybooks.com</a>
+        <a href="#">Live chat</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> BuyBooks.com. All rights reserved.</span>
+      <span><a href="#">Privacy</a> · <a href="#">Terms</a></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
