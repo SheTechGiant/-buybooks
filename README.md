@@ -126,6 +126,16 @@ Test card: `4242 4242 4242 4242`, any future date, any CVC.
 5. Create the Stripe webhook (step 3.3), add `STRIPE_WEBHOOK_SECRET` in Vercel, then
    **Deployments → ⋯ → Redeploy**. (Any env change needs a redeploy.)
 
+### Automatic deploys (set up)
+The Vercel project is connected to GitHub (`SheTechGiant/-buybooks`). Every push to `main`
+updates the live site automatically — no `vercel` command needed:
+```bash
+git add -A
+git commit -m "Describe what changed"
+git push
+```
+Pushes to any other branch create a private preview link instead (shown on the commit in GitHub).
+
 ## 5. Connect buybooks.com
 
 Vercel → **Settings → Domains** → add `buybooks.com` and `www.buybooks.com`, then add the DNS
